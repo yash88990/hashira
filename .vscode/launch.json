@@ -1,0 +1,29 @@
+{
+    // VS Code Java Debug Config
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "PolynomialConstantLagrange",
+            "request": "launch",
+            "mainClass": "PolynomialConstantLagrange",
+            "projectName": "hashira_be477b76",
+            "vmArgs": "-cp ${workspaceFolder}/out:${workspaceFolder}/lib/*",
+            "args": ["test2.json"]   // 👈 runs with test1.json by default
+        },
+        {
+            "type": "java",
+            "name": "SecretSharing",
+            "request": "launch",
+            "mainClass": "SecretSharing",
+            "projectName": "hashira_be477b76",
+            "vmArgs": "-cp ${workspaceFolder}/out:${workspaceFolder}/lib/*"
+        }
+    ]
+}
